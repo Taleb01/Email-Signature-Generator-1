@@ -1,0 +1,132 @@
+$jet-black: #292929
+$rose-gold: #ea98c9
+$standard-gold: #b5a187
+$ming-red: #ff213b
+$stunning-blue: #3f51b5
+
+
+// Theme colors
+
+.Display
+
+  &.jet-black
+  
+    h2
+      color: $jet-black
+
+    h3
+      color: lighten($jet-black, 10%)
+
+    a
+      color: darken($jet-black, 20%)
+
+  &.rose-gold
+  
+    h2
+      color: $rose-gold
+
+    h3
+      color: lighten($rose-gold, 10%)
+
+    a
+      color: darken($rose-gold, 20%)
+
+  &.standard-gold
+  
+    h2
+      color: $standard-gold
+
+    h3
+      color: lighten($standard-gold, 10%)
+
+    a
+      color: darken($standard-gold, 20%)
+
+  &.ming-red
+  
+    h2
+      color: $ming-red
+
+    h3
+      color: lighten($ming-red, 10%)
+
+    a
+      color: darken($ming-red, 20%)
+
+  &.stunning-blue
+  
+    h2
+      color: $stunning-blue
+
+    h3
+      color: lighten($stunning-blue, 10%)
+
+    a
+      color: darken($stunning-blue, 20%)
+
+
+.Display
+  max-width: 100%
+  padding: 4.5vh
+  overflow: auto
+  height: 100%
+  position: relative
+
+  h2, h3, a, p
+    margin-bottom: 12px
+    display: block
+
+    &.placeholder
+      color: #c7c7c7
+
+  h2
+    font-weight: 500
+    font-size: 20px
+    margin-bottom: 4px
+    color: $jet-black
+
+  h3
+    font-weight: 400
+    font-size: 15px
+
+  a
+    font-size: 12px
+    margin-bottom: 4px
+
+  .company-info
+    white-space: pre-line
+    font-weight: 300
+    line-height: 16px
+    font-size: 13px
+
+  .copy-btn
+    border: none
+    background-color: #7e5bef
+    color: #ffffff
+    padding: 8px 14px
+    cursor: pointer
+    font-size: 14px
+    font-weight: 500
+    position: absolute
+    bottom: 40px
+    right: 40px
+    opacity: 0.7
+    border-radius: 2px
+
+    &.copied
+      background-color: #57d878
+      pointer-events: none
+      outline: none
+
+
+@media (min-width: 860px)
+  
+  .Display
+    width: 50%
+
+    .copy-btn
+      opacity: 1
+      transition: background 0.3s ease-out
+
+      &:hover
+        background-color: #9177e6
